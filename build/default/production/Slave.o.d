@@ -1,0 +1,20 @@
+build/default/production/Slave.o:  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/Slave.c  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/Ultraljud.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_MAIN.H  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_DEFS.DEF  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_types.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_CANDRV.H  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_COMM.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_dict.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_NMT.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_SYNC.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_SDO1.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_NMTE.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_PDO.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_TOOLS.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_ABERR.H  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/Compilation.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/Slave.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/IOutils.h  \
+
