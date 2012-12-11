@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=UltraljudSlave.X
+PROJECTNAME=UltraSoundSlave
 
 # Active Configuration
 DEFAULTCONF=default
