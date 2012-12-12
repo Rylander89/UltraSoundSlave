@@ -33,6 +33,7 @@
       <itemPath>Timer.h</itemPath>
       <itemPath>Ultraljud.h</itemPath>
       <itemPath>CO_dict.def</itemPath>
+      <itemPath>PRAGMAS.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
