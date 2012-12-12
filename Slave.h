@@ -1,10 +1,3 @@
-/* 
- * File:   Slave.h
- * Author: staffan
- *
- * Created on den 14 november 2012, 13:46
- */
-
 #ifndef SLAVE_H
 #define	SLAVE_H
 

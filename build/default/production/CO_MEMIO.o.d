@@ -1,5 +1,5 @@
 build/default/production/CO_MEMIO.o:  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_MEMIO.C  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_MEMIO.H  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_DEFS.DEF  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_MEMIO.C  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_MEMIO.H  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_DEFS.DEF  \
 

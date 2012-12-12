@@ -1,4 +1,4 @@
 build/default/production/CO_TOOLS.o:  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_TOOLS.c  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_types.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_TOOLS.c  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_types.h  \
 

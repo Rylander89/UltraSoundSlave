@@ -1,8 +1,8 @@
 build/default/production/CO_CANDRV.o:  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_CANDRV.C  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_DEFS.DEF  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_types.h  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_CANDRV.H  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/Globals.h  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/NMTextension.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_CANDRV.C  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_DEFS.DEF  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_types.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_CANDRV.H  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/Globals.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/NMTextension.h  \
 

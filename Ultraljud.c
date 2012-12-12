@@ -1,7 +1,7 @@
 #include "Ultraljud.h"
 #include <usart.h>
 
-void Init_Ultra()
+void Init_Ultra(void)
 {
     // configure USART 129 ändras om det behövs, beroende på baudrate
     OpenUSART( USART_TX_INT_OFF &

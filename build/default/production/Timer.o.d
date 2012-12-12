@@ -1,3 +1,3 @@
 build/default/production/Timer.o:  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/Timer.c  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/Timer.c  \
 

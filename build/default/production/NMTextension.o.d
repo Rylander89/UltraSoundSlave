@@ -1,7 +1,7 @@
 build/default/production/NMTextension.o:  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/NMTextension.c  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_NMT.h  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_types.h  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/CO_COMM.h  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/UltraljudSlave/UltraljudSlave.X/IOutils.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/NMTextension.c  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_NMT.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_types.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/CO_COMM.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/IOutils.h  \
 

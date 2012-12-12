@@ -1,5 +1,4 @@
 #include	"CO_MAIN.H"
-#include        "Compilation.h"
 #include        "Slave.h"
 #include        "IOutils.h"
 #include        "Ultraljud.h"
