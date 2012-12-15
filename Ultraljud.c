@@ -14,16 +14,18 @@ void Init_Ultra(void)
 }
 int ReadDistance(unsigned short *dist)
 {
-    char temp[4];
+    char temp[5];
     char *p = temp;
     if(DataRdyUSART())
     {
-        getsUSART( p, 4 );
+        getsUSART( p, 5 );
         if(*p == 'R')
         {
             *dist = 0;
             p++;
-            *dist = (int)(*p - 48)*100;
+            *dist = (int)(*p - 48)*1000;
+            p++;
+            *dist += (int)(*p - 48)*100;
             p++;
             *dist += (int)(*p - 48)*10;
             p++;

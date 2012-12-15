@@ -39,13 +39,17 @@ UNSIGNED8 uDemoState; 					// Bits used to control various states
 unsigned char uDemoSyncCount;			// Counter for synchronous types
 unsigned char uDemoSyncSet;				// Internal TPDO type control
 
-unsigned short distance = 0x0000;
+unsigned short distance = 200;
 unsigned char warning = 0x01;
 
-unsigned short limit = 0x0000;
-unsigned char limitMode = 0x00;
-unsigned char distanceMode = 0x01;
+unsigned short limit = 100;
+unsigned char limitMode = 0x01;
+unsigned char distanceMode = 0x00;
 
+unsigned char Hold = 0;
+
+unsigned char TriggeredBySwitch = 0x00;
+unsigned char TriggeredByDistance = 0x00;
 
 
 void Slave_Init(void)
@@ -80,17 +84,35 @@ void Slave_Init(void)
 
 void Slave_ProcessEvents(void)
 {
-        int i = 0;
-        
-        ReadDistance(&distance);
-        
+        //ReadDistance(&distance);
+        LED = !SWITCH;
         if(limitMode)
         {
-            if(distance <= limit)
+            if((distance <= limit) && !Hold && !TriggeredBySwitch)
             {
+                TriggeredByDistance = 1;
+                Hold = 1;
                 //SEND PDO!!!
                 if(mTPDOIsPutRdy(1))
                     mTPDOWritten(1);
+            }
+            else if(!SWITCH && !Hold && !TriggeredByDistance)
+            {
+                TriggeredBySwitch = 1;
+                Hold = 1;
+                //SEND PDO!!!
+                if(mTPDOIsPutRdy(1))
+                    mTPDOWritten(1);
+            }
+            if( (distance > limit) && TriggeredByDistance )
+            {
+                Hold = 0;
+                TriggeredByDistance = 0;
+            }
+            else if(SWITCH && TriggeredBySwitch)
+            {
+                Hold = 0;
+                TriggeredBySwitch = 0;
             }
         }
         if(distanceMode)
@@ -98,16 +120,6 @@ void Slave_ProcessEvents(void)
             if(mTPDOIsPutRdy(2))
                     mTPDOWritten(2);
         }
-        // If ready to send
-	if (mTPDOIsPutRdy(1) && ButtonPressed())
-	{
-	}
-
-	// If any data has been received
-	if (mRPDOIsGetRdy(1))
-	{
-	}
-        i = 1;
 }
 
 

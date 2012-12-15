@@ -1,5 +1,5 @@
 build/default/production/IOutils.o:  \
-	C:/dev/utvecklingsprojekt/UltraSoundSlave/IOutils.c  \
-	C:/dev/utvecklingsprojekt/UltraSoundSlave/IOutils.h  \
-	C:/dev/utvecklingsprojekt/UltraSoundSlave/Globals.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/Master\ and\ Slaves/UltraSoundSlave/IOutils.c  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/Master\ and\ Slaves/UltraSoundSlave/IOutils.h  \
+	C:/Users/Anton/Documents/Utvecklingsprojekt/Master\ and\ Slaves/UltraSoundSlave/Globals.h  \
 

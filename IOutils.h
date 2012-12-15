@@ -8,6 +8,7 @@
 #define STOPLED         PORTAbits.RA1
 #define PREOPLED        PORTAbits.RA2
 #define OPLED           PORTAbits.RA3
+#define SWITCH          PORTAbits.RA5
 
 #define PRESSED         1
 

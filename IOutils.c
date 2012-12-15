@@ -11,7 +11,7 @@ void IO_Init(void)
     TRISAbits.TRISA1 = 0; // Led pin as output
     TRISAbits.TRISA2 = 0; // Led pin as output
     TRISAbits.TRISA3 = 0; // Led pin as output
-    TRISEbits.TRISE2 = 1; // Button as input
+    TRISAbits.TRISA5 = 1; // Button as input
     LED         = 0; // LED off
     STOPLED     = 0; // LED off
     PREOPLED    = 0; // LED off
