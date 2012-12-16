@@ -42,14 +42,8 @@ void main(void)
         // Enable TPDO:s and RPDO:s
         mTPDOOpen(1);
         mTPDOOpen(2);
-//        mRPDOOpen(1);
-//
-//        mTPDOOpen(2);
-//        mRPDOOpen(2);
+        mRPDOOpen(1);
 
-        //_CO_COMM_SDO1_Open();
-        
-     
 	while(1)
 	{
                 

@@ -39,10 +39,10 @@ UNSIGNED8 uDemoState; 					// Bits used to control various states
 unsigned char uDemoSyncCount;			// Counter for synchronous types
 unsigned char uDemoSyncSet;				// Internal TPDO type control
 
-unsigned short distance = 200;
+unsigned short distance = 0;
 unsigned char warning = 0x01;
 
-unsigned short limit = 100;
+unsigned short limit = 0;
 unsigned char limitMode = 0x01;
 unsigned char distanceMode = 0x00;
 
@@ -51,20 +51,15 @@ unsigned char Hold = 0;
 unsigned char TriggeredBySwitch = 0x00;
 unsigned char TriggeredByDistance = 0x00;
 
+unsigned char State = 0x00;
+
+enum ApplicationState APPLICATION_STATE = INITIALIZATION;
+
 
 void Slave_Init(void)
 {
-	uLocalRcvBuffer[0] = uLocalXmtBuffer[0] = 0xAB;
-	uLocalRcvBuffer[1] = uLocalXmtBuffer[1] = 0;
-	uLocalRcvBuffer[2] = uLocalXmtBuffer[2] = 0;
-	uLocalRcvBuffer[3] = uLocalXmtBuffer[3] = 0;
-	uLocalRcvBuffer[4] = uLocalXmtBuffer[4] = 0;
-	uLocalRcvBuffer[5] = uLocalXmtBuffer[5] = 0;
-	uLocalRcvBuffer[6] = uLocalXmtBuffer[6] = 0;
-	uLocalRcvBuffer[7] = uLocalXmtBuffer[7] = 0;
-
         // Convert to MCHP
-	mTOOLS_CO2MCHP(mCOMM_GetNodeID().byte + 0xC0000200L);
+	mTOOLS_CO2MCHP(0xC0000182L);
 	// Store the COB
 	mTPDOSetCOB(1, mTOOLS_GetCOBID());
 
@@ -77,6 +72,11 @@ void Slave_Init(void)
 	mTPDOSetTxPtr(1, (unsigned char *)(&warning));
         mTPDOSetTxPtr(2, (unsigned char *)(&distance));
 
+        // RPDO1
+	mTOOLS_CO2MCHP(0xC0000181L);
+	mRPDOSetCOB(1, mTOOLS_GetCOBID());
+        mRPDOSetRxPtr(1, (unsigned char *)(&State));
+
 	// Set the length
 	mTPDOSetLen(1, 1);
         mTPDOSetLen(2, 2);
@@ -84,14 +84,20 @@ void Slave_Init(void)
 
 void Slave_ProcessEvents(void)
 {
-        //ReadDistance(&distance);
+        ReadDistance(&distance);
         LED = !SWITCH;
-        if(limitMode)
+        if(mRPDOIsGetRdy(1))
         {
-            if((distance <= limit) && !Hold && !TriggeredBySwitch)
+            mAppGoToPOSTMANEUVERstate();
+            mRPDORead(1);
+        }
+        if(limitMode && (APPLICATION_STATE == PREMANEUVER) )
+        {
+            if((distance < limit) && !Hold && !TriggeredBySwitch)
             {
                 TriggeredByDistance = 1;
                 Hold = 1;
+                mAppGoToMANEUVERstate();
                 //SEND PDO!!!
                 if(mTPDOIsPutRdy(1))
                     mTPDOWritten(1);
@@ -100,6 +106,7 @@ void Slave_ProcessEvents(void)
             {
                 TriggeredBySwitch = 1;
                 Hold = 1;
+                mAppGoToMANEUVERstate();
                 //SEND PDO!!!
                 if(mTPDOIsPutRdy(1))
                     mTPDOWritten(1);

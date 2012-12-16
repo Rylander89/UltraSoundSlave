@@ -32,6 +32,18 @@ extern unsigned short limit;
 extern unsigned char limitMode;
 extern unsigned char distanceMode;
 
+enum ApplicationState
+{
+    INITIALIZATION,
+    PREMANEUVER,
+    MANEUVER,
+    POSTMANEUVER
+};
+extern enum ApplicationState APPLICATION_STATE;
+#define mAppGoToPREMANEUVERstate() APPLICATION_STATE = PREMANEUVER
+#define mAppGoToMANEUVERstate() APPLICATION_STATE = MANEUVER
+#define mAppGoToPOSTMANEUVERstate() APPLICATION_STATE = POSTMANEUVER
+
 void Slave_Init(void);
 void Slave_ProcessEvents(void);
 
