@@ -1,4 +1,4 @@
 build/default/production/Ultraljud.o:  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/Master\ and\ Slaves/UltraSoundSlave/Ultraljud.c  \
-	C:/Users/Anton/Documents/Utvecklingsprojekt/Master\ and\ Slaves/UltraSoundSlave/Ultraljud.h  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/Ultraljud.c  \
+	C:/dev/utvecklingsprojekt/UltraSoundSlave/Ultraljud.h  \
 

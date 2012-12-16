@@ -60,10 +60,10 @@
 			{0x1200,0x00,CONST,1,{(rom unsigned char *)&_uSDO1COMMIndx}},				\\
 			{0x1200,0x01,FUNC | RO,4,{(rom unsigned char *)&_CO_COMM_SDO1_CS_COBIDAccessEvent}},	\\
 			{0x1200,0x02,FUNC | RO,4,{(rom unsigned char *)&_CO_COMM_SDO1_SC_COBIDAccessEvent}},    \\
-                        {0x1200,0x03,RW,2,{(rom unsigned char *)&limit}},                                       \\
-                        {0x1200,0x05,RW,1,{(rom unsigned char *)&limitMode}},                                    \\
-                        {0x1200,0x06,RW,1,{(rom unsigned char *)&distanceMode}}
-			
+            {0x1200,0x03,RW,2,{(rom unsigned char *)&limit}},                                       \\
+            {0x1200,0x05,RW,1,{(rom unsigned char *)&limitMode}},                                    \\
+            {0x1200,0x06,RW,1,{(rom unsigned char *)&distanceMode}}
+
 				
 				
 				

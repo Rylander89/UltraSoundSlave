@@ -24,7 +24,7 @@ void main(void)
         // 0x00 => 1Mbps
 	mCO_SetBaud(0x05);		// Set the baudrate
 
-	mNMTE_SetHeartBeat(0x0004);	// Set the initial heartbeat
+	mNMTE_SetHeartBeat(0x0064);	// Set the initial heartbeat
 	mNMTE_SetGuardTime(0000);	// Set the initial guard time
 	mNMTE_SetLifeFactor(0x00);	// Set the initial life time
 
