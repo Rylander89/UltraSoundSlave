@@ -44,6 +44,8 @@ void main(void)
         mTPDOOpen(2);
         mRPDOOpen(1);
 
+        mAppGoToPREMANEUVERstate();
+
 	while(1)
 	{
                 
